@@ -32,6 +32,6 @@ jobs:
               registry: ghcr.io
               username: ${{ github.actor }}
               password: ${{ secrets.GITHUB_TOKEN }}
-              tags: ghcr.io/ginzuka/simplewhale:latest
+              tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
 #               cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:buildcache
 #               cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:buildcache,mode=max
